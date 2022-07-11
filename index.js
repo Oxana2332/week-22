@@ -1,4 +1,4 @@
-// setup 
+// chartJS
 const data = {
     datasets: [{
         label: 'Juice',
@@ -159,7 +159,6 @@ const data = {
     }]
     };
 
-    // config 
     const config = {
     type: 'line',
     data,
@@ -180,9 +179,12 @@ const data = {
     }
     };
 
-    // render init block
     const myChart = new Chart(
     document.getElementById('myChart'),
     config
     );
     
+//moment
+const moment = require('moment');
+let date = moment().format('MMMM Do YYYY, h:mm:ss a');
+document.getElementById('today').innerText =`Now: ${date}`;
