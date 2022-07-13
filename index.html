@@ -5,28 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="node_modules/multiple.js/multiple.css" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
-<section class="content">
-    <p id="today"></p>
+    <aside class="item links">
+        <a href="#">Checks from "Лента"</a>
+        <a href="#">Checks from "Магнит"</a>
+    </aside>
+    <section class="content item">
         <h2 class="title">Dynamics of food prices in the Russia + dynamics of the RUB to USD</h2>
-    <div class="chartBox">
-        <canvas id="myChart"></canvas>
-    </div>
-    <p class="note">
-        'Juice' &ndash; Нектар Я вишнёвый осв<br>
-        'Soda' &ndash; Напит б/а Schwepp<br>
-        'Salad' &ndash; Салат Греческий с оре(prices/10)<br>
-        'Date fruits' &ndash; Финики 200г<br>
-        'Eggs' &ndash; Экстра Яйцо С0 10шт бокс<br>
-        'Corn sticks' &ndash; Кузя Лакомкин Кукур палочки в сах пудре 140г<br>
-        'Bread' &ndash; Хлебный дом Батон Московский нарез 1с 350г<br>
-        'RUB to USD' &ndash; data of the Central Bank of the Russian Federation
-    </p>
-</section>
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+        <p class="note">
+            'Juice' &ndash; Нектар Я вишнёвый осв<br>
+            'Soda' &ndash; Напит б/а Schwepp<br>
+            'Salad' &ndash; Салат Греческий с оре(prices/10)<br>
+            'Date fruits' &ndash; Финики 200г<br>
+            'Eggs' &ndash; Экстра Яйцо С0 10шт бокс<br>
+            'Corn sticks' &ndash; Кузя Лакомкин Кукур палочки в сах пудре 140г<br>
+            'Bread' &ndash; Хлебный дом Батон Московский нарез 1с 350г<br>
+            'RUB to USD' &ndash; data of the Central Bank of the Russian Federation
+        </p>
+    </section>
+    <article class="item ">
+        <p id="today"></p>
+        <p>News</p>
+        <p>News2</p>
+        <p>News3</p>
+    </article>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js">
+    </script>
+    <script src="node_modules/multiple.js/multiple.js"></script>
     <script src="bundle.js"></script>
 </body>
 </html>

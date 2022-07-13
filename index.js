@@ -184,7 +184,14 @@ const data = {
     config
     );
     
-//moment
+//momentjs
 const moment = require('moment');
 let date = moment().format('MMMM Do YYYY, h:mm:ss a');
 document.getElementById('today').innerText =`Now: ${date}`;
+
+//multiple.js
+var multiple = new Multiple({
+    selector: '.item',
+    background: 'linear-gradient(#273463, #8B4256)'
+});
+multiple.update();
