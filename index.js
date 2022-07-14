@@ -120,7 +120,7 @@ const data = {
         ],
         borderWidth: 1
     },{
-        label: 'RUB to USD',
+        label: 'RUB to USD(data of the Central Bank of the Russian Federation)',
         data: [
             {x:'2021-05-28', y: 73},
             {x:'2021-06-15', y: 71},

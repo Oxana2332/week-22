@@ -4,10 +4,18 @@
     font-family: sans-serif;
 }
 
+.container {
+    display: flex;
+}
+
+.main {
+    padding: 15px;
+}
+
 .title {
     font-size: 25px;
-    padding-top: 10px;
     height: 10px;
+    margin-bottom: 50px;
 }
 
 .chartBox {
@@ -19,7 +27,62 @@
     background: white;
 }
 
-.note {
-margin-top: 15px;
-font-weight: 500;
+.aside {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
 }
+
+#today {
+    text-align: right;
+    font-size: 20px;
+    height: 10px;
+    padding: 1%;
+}
+
+.aside_quote {
+    margin-top: 50px;
+}
+
+.aside_news {
+    color: black;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.aside_news:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.aside_checks {
+    color: black;
+    margin-top: 70px;
+}
+
+.aside_checks__first {
+    background-color: black;
+    padding: 5%;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15%;
+}
+
+.aside_checks__second {
+    background-color: black;
+    padding: 5%;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.aside_checks__first:hover .aside_checks__second:hover {
+    color: brown;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        display: block;
+    }
+    }

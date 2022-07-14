@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="node_modules/multiple.js/multiple.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
-<body>
-    <aside class="item links">
-        <a href="#">Checks from "Лента"</a>
-        <a href="#">Checks from "Магнит"</a>
-    </aside>
-    <section class="content item">
-        <h2 class="title">Dynamics of food prices in the Russia + dynamics of the RUB to USD</h2>
+<body class="container item">
+    <main class="main">
+        <h2 class="title">Dynamics of food prices in the Rus + dynamics of the RUB to USD</h2>
         <div class="chartBox">
             <canvas id="myChart"></canvas>
         </div>
-        <p class="note">
-            'Juice' &ndash; Нектар Я вишнёвый осв<br>
-            'Soda' &ndash; Напит б/а Schwepp<br>
-            'Salad' &ndash; Салат Греческий с оре(prices/10)<br>
-            'Date fruits' &ndash; Финики 200г<br>
-            'Eggs' &ndash; Экстра Яйцо С0 10шт бокс<br>
-            'Corn sticks' &ndash; Кузя Лакомкин Кукур палочки в сах пудре 140г<br>
-            'Bread' &ndash; Хлебный дом Батон Московский нарез 1с 350г<br>
-            'RUB to USD' &ndash; data of the Central Bank of the Russian Federation
-        </p>
-    </section>
-    <article class="item ">
+    </main>
+
+    <aside class="aside">
         <p id="today"></p>
-        <p>News</p>
-        <p>News2</p>
-        <p>News3</p>
-    </article>
+        <blockquote class="aside_quote">&ndash; В России люди больше доверяют чесноку, чем правительству. <br>
+            &ndash; Почему? <br>
+            &ndash; Потому что по данным правительства инфляция составляет 5,6%, а по чесноку…</blockquote>
+        <a class="aside_news" href="https://www.interfax.ru/business/845408">Инфляция в РФ в мае 2022 года замедлилась дорекордных 0,12% с 1,56% в апреле, 7,61% в марте, 1,17% в феврале и 0,99% в январе, сообщил в среду Росстат
+        </a>
+        <a class="aside_news" href="https://fintolk.pro/sekretnyj-kurs-skolko-stoit-dollar-na-samom-dele-letom-2022-goda/">Секретный курс:
+            сколько стоит доллар на самом деле летом 2022 года</a>
+        <div class="aside_checks">
+            <a class="aside_checks__first" href="#">Checks from "Лента"</a>
+            <a class="aside_checks__second" href="#">Checks from "Магнит"</a>
+        </div>
+    </aside>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js">
@@ -42,4 +39,5 @@
     <script src="node_modules/multiple.js/multiple.js"></script>
     <script src="bundle.js"></script>
 </body>
+
 </html>
