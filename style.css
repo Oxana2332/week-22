@@ -46,7 +46,7 @@
 
 .aside_news {
     color: black;
-    margin-top: 50px;
+    margin-top: 25px;
     text-decoration: none;
 }
 
@@ -55,7 +55,11 @@
     text-decoration: underline;
 }
 
-.aside_checks {
+.aside_text {
+    margin-top: -15px;
+}
+
+/*aside_checks {
     color: black;
     margin-top: 70px;
 }
@@ -79,10 +83,18 @@
 
 .aside_checks__first:hover .aside_checks__second:hover {
     color: brown;
-}
+}*/
 
 @media screen and (max-width: 1300px) {
     .container {
         display: block;
+    }
+
+    .chartBox {
+        width: 90vw;
+    }
+
+    .aside {
+        margin-left: 2%;
     }
     }
