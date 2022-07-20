@@ -59,32 +59,6 @@
     margin-top: -15px;
 }
 
-/*aside_checks {
-    color: black;
-    margin-top: 70px;
-}
-
-.aside_checks__first {
-    background-color: black;
-    padding: 5%;
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    margin-right: 15%;
-}
-
-.aside_checks__second {
-    background-color: black;
-    padding: 5%;
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.aside_checks__first:hover .aside_checks__second:hover {
-    color: brown;
-}*/
-
 @media screen and (max-width: 1300px) {
     .container {
         display: block;
